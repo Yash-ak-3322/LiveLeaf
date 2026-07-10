@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "@/components/HeroSection";
 import BookCard from "@/components/BookCard";
-// import { getAllBooks } from "@/lib/actions/book.actions";
+import { getAllBooks } from "@/lib/actions/book.actions";
 import Search from "@/components/Search";
 
 const Page = async ({
@@ -11,8 +11,8 @@ const Page = async ({
 }) => {
   const { query } = await searchParams;
 
-  // const bookResults = await getAllBooks(query);
-  // const books = bookResults.success ? (bookResults.data ?? []) : [];
+  const bookResults = await getAllBooks(query);
+  const books = bookResults.success ? (bookResults.data ?? []) : [];
 
   return (
     <main className="wrapper container">
@@ -26,7 +26,7 @@ const Page = async ({
       </div>
 
       <div className="library-books-grid">
-        {/* {books.map((book) => (
+        {books.map((book) => (
           <BookCard
             key={book._id}
             title={book.title}
@@ -34,7 +34,7 @@ const Page = async ({
             coverURL={book.coverURL}
             slug={book.slug}
           />
-        ))} */}
+        ))}
       </div>
     </main>
   );
