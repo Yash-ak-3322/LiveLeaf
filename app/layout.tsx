@@ -21,7 +21,7 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "JSM",
+  title: "LiveLeaf - AI Book Companion",
   description:
     "Transform your books into interactive AI conversations. Upload PDFs, and chat with your books using voice.",
 };
