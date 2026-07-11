@@ -1,36 +1,230 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="public/assets/readme-hero-new.webp" alt="LiveLeaf Banner" />
 
-First, run the development server:
+<br/>
+
+<img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Vapi-62F6B5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ElevenLabs-FFFFFF?style=for-the-badge&logoColor=black"/>
+<img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+<img src="https://img.shields.io/badge/shadcn/ui-black?style=for-the-badge"/>
+
+# 📚 LiveLeaf
+
+### AI-Powered Voice Companion for Interactive Reading
+
+Transform static PDF books into intelligent, real-time voice conversations using modern AI, semantic document processing, and cloud-native technologies.
+
+</div>
+
+---
+
+## 📑 Table of Contents
+
+- [Introduction](#-introduction)
+- [Technology Stack](#-technology-stack)
+- [Core Features](#-core-features)
+- [Engineering Highlights](#-engineering-highlights)
+- [Project Structure](#-project-structure)
+- [Quick Start](#-quick-start)
+
+---
+
+# 🚀 Introduction
+
+**LiveLeaf** is a modern full-stack AI application that transforms PDF books into interactive conversational experiences through real-time Voice AI.
+
+The platform combines semantic document understanding, natural voice interactions, secure authentication, and scalable cloud infrastructure, allowing users to upload books, ask context-aware questions, generate AI-powered summaries, and communicate naturally through voice.
+
+Built with **Next.js 16**, **TypeScript**, and an AI-first architecture, the project demonstrates production-oriented software engineering practices including modular design, reusable components, secure authentication, cloud storage integration, and scalable backend development.
+
+---
+
+# ⚙ Technology Stack
+
+### Frontend
+
+- Next.js 16 (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+### Backend
+
+- Next.js Server Actions
+- MongoDB
+- Mongoose
+
+### AI Services
+
+- Vapi (Voice AI)
+- ElevenLabs (Speech Synthesis)
+- Google Gemini (Embeddings)
+
+### Infrastructure
+
+- Clerk Authentication
+- Vercel Blob Storage
+
+---
+
+# ✨ Core Features
+
+### 📄 Intelligent Document Processing
+
+- Secure PDF uploads
+- Automated text extraction
+- Semantic document embeddings
+- AI-ready content ingestion
+
+### 🎙 Real-Time Voice Conversations
+
+- Low-latency Voice AI
+- Natural conversational interactions
+- Context-aware responses
+- Human-like speech synthesis
+
+### 🧠 AI Knowledge Retrieval
+
+- Context-aware question answering
+- AI-powered book summaries
+- Intelligent information retrieval
+- Conversation memory
+
+### 📚 Personal Library
+
+- Book management
+- Conversation history
+- Searchable collections
+- Persistent user workspace
+
+### 🔐 Secure Authentication
+
+- Email & Social Login
+- Protected routes
+- Session management
+- User authorization
+
+### ☁ Cloud Storage
+
+- Secure PDF storage
+- Scalable file management
+- Persistent document access
+
+### 📱 Responsive Experience
+
+- Mobile-first design
+- Cross-device compatibility
+- Accessible UI components
+
+---
+
+# 💡 Engineering Highlights
+
+- Full-Stack Next.js Architecture
+- Type-Safe Development with TypeScript
+- Modular & Reusable Component Design
+- AI Service Integration
+- Secure Authentication & Authorization
+- Cloud-Based File Storage
+- Server Actions
+- Responsive UI Architecture
+- Clean Code Organization
+- Production-Oriented Project Structure
+
+---
+
+# 📂 Project Structure
+
+```text
+app/
+components/
+constants/
+database/
+lib/
+public/
+types/
+```
+
+---
+
+# ⚡ Quick Start
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/liveleaf.git
+
+cd liveleaf
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Configure environment variables
+
+Create a `.env` file in the project root.
+
+```env
+NODE_ENV=development
+
+NEXT_PUBLIC_BASE_URL=
+
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+# MongoDB
+MONGODB_URI=
+
+# Vercel Blob
+BLOB_READ_WRITE_TOKEN=
+
+# Vapi
+NEXT_PUBLIC_VAPI_API_KEY=
+VAPI_SERVER_SECRET=
+
+# Google Gemini
+GOOGLE_GEMINI_API_KEY=
+
+# ElevenLabs
+ELEVENLABS_API_KEY=
+```
+
+### Run the application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Multi-document conversations
+- AI-generated flashcards
+- Team workspaces
+- Advanced semantic search
+- Reading analytics dashboard
+- Multilingual Voice AI support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is developed for educational and portfolio purposes.
